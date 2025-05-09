@@ -1,8 +1,8 @@
 <main class="bg-[#fdf8f5] text-gray-800">
 
 
-  <section class="relative flex flex-col items-center text-center px-4 sm:px-6 pt-0 pb-24 bg-[url('foto2.jpg')] bg-cover bg-center bg-no-repeat min-h-[80vh]">
-    <div class="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
+  <section class="relative flex flex-col items-center text-center px-4 sm:px-6 pt-0 pb-24 bg-[url('assets/woman-background.jpg')] bg-cover bg-center bg-no-repeat min-h-[80vh]">
+    <div class="absolute inset-0 bg-white/60 backdrop-blur-xs"></div>
   
     <!-- Header com menu responsivo -->
     <header class="relative z-10 w-full py-6">
@@ -62,9 +62,9 @@
         Especialidade em Ginecologia e Obstetrícia
       </p>
       <h1 class="text-3xl sm:text-5xl md:text-6xl font-title font-bold text-[#2d2d2d] mb-6 sm:mb-8">
-        Dra. Sesylia Aliosha
+        Dra. Cecília Aliosha
       </h1>
-      <p class="text-base sm:text-lg md:text-xl text-gray-700 italic leading-relaxed mb-6 sm:mb-8">
+      <p class="kalm sm:text-lg md:text-xl text-gray-500 italic leading-relaxed mb-6 sm:mb-8">
         "Minha missão é oferecer cuidados de excelência e bem-estar para mulheres em todas as fases da vida, abrangendo
         desde a juventude até a menopausa, com foco na saúde ginecológica e reprodutiva."
       </p>
@@ -85,31 +85,28 @@
   
 
   <section class="relative overflow-hidden bg-white py-16 px-4">
-    <!-- Flores decorativas -->
-    <img src="assets/flower.png" alt=""
-      class="absolute top-0 right-0 w-32 md:w-96 object-contain pointer-events-none translate-x-1/4 -translate-y-1/2 opacity-30" />
-    <img src="assets/flower.png" alt=""
-      class="absolute bottom-0 left-0 w-32 md:w-96 object-contain pointer-events-none rotate-180 -translate-x-1/4 translate-y-1/2 opacity-30" />
-
+    <!-- Background floral com opacidade -->
+    <div class="absolute inset-0 z-0 bg-[url('assets/flower-bg.jpg')] bg-cover bg-center opacity-50"></div>
+  
     <div class="max-w-6xl mx-auto text-center relative z-10">
       <div class="flex justify-center mb-4">
         <img src="assets/icon.png" alt="Ícone Floral" class="w-8 h-8 animate-bounce" />
       </div>
-
+  
       <h2 class="text-3xl md:text-4xl font-title font-semibold text-[#2d2d2d] mb-4">Serviços oferecidos</h2>
       <p class="text-[#5f5f5f] text-base md:text-lg max-w-xl mx-auto mb-12">
         Ofereço atendimentos nas áreas de <span class="font-semibold">ginecologia</span>,
         <span class="font-semibold">obstetrícia</span> e sou especialista em
         <span class="font-semibold">procedimentos cirúrgicos ginecológicos</span>.
       </p>
-
+  
       <!-- Serviços -->
-      <div class="flex flex-col md:flex-row justify-center items-center md:items-start gap-12 mt-12">
+      <div class="flex flex-col md:flex-row justify-between items-stretch gap-12 mt-12">
         <!-- Ginecologia -->
-        <div class="relative">
-          <div class="absolute -top-4 -left-4 w-6 h-6 md:w-8 md:h-8 bg-[#2b4233] z-0"></div>
+        <div class="relative flex-1">
+          <div class="absolute -top-4 -left-4 w-6 h-6 md:w-8 md:h-24 bg-[#2b4233] z-0"></div>
           <div class="relative z-10">
-            <img src="assets/gynecologist.png" alt="Ginecologia"
+            <img src="assets/gingecologia.jpg" alt="Ginecologia"
               class="w-full max-w-xs object-cover rounded shadow-lg mx-auto hover-effect" />
             <div class="w-full max-w-xs bg-[#eab4a2] text-center py-2 text-lg font-serif text-[#2d2d2d] mx-auto">
               Ginecologia
@@ -117,9 +114,17 @@
           </div>
         </div>
 
+        <div class="mt-16 text-center max-w-3xl mx-auto px-4 text-[#92736d] text-base md:text-lg leading-relaxed font-serif">
+          <p class="kalm">
+            "Acredito que toda mulher merece um atendimento de qualidade, respeitoso e personalizado. Meu compromisso é estar
+            presente em todas as etapas da vida, oferecendo cuidado atencioso, expertise técnica e dedicação total à sua saúde
+            e bem-estar."
+          </p>
+        </div>
+  
         <!-- Obstetrícia -->
-        <div class="relative">
-          <div class="absolute -bottom-4 -right-4 w-6 h-6 md:w-8 md:h-8 bg-[#2b4233] z-0"></div>
+        <div class="relative flex-1">
+          <div class="absolute -bottom-4 -right-4 w-6 h-6 md:w-8 md:h-24 bg-[#2b4233] z-0"></div>
           <div class="relative z-10">
             <img src="assets/obtetricia.jpg" alt="Obstetrícia"
               class="w-full max-w-xs object-cover rounded shadow-lg mx-auto hover-effect" />
@@ -129,19 +134,12 @@
           </div>
         </div>
       </div>
-
-      <div
-        class="mt-16 text-center max-w-3xl mx-auto px-4 text-[#92736d] text-base md:text-lg leading-relaxed font-serif">
-        <p class="italic">
-          "Acredito que toda mulher merece um atendimento de qualidade, respeitoso e personalizado. Meu compromisso é
-          estar
-          presente em todas as etapas da vida, oferecendo cuidado atencioso, expertise técnica e dedicação total à sua
-          saúde
-          e bem-estar."
-        </p>
-      </div>
+  
+      
     </div>
   </section>
+  
+  
 
 
 
@@ -154,7 +152,7 @@
 
       <!-- Imagem da Dra. com sobreposição -->
       <div class="relative w-full lg:w-1/2">
-        <img src="assets/aiwoman.jpg" alt="Retrato profissional da Dra. Sesylia Aliosha, ginecologista e obstetra"
+        <img src="assets/aiwoman.jpg" alt="Retrato profissional da Dra. Cecília Aliosha, ginecologista e obstetra"
           class="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-lg shadow-lg h-auto mx-auto mt-[-4rem]" />
       </div>
 
@@ -200,7 +198,7 @@
       <!-- Sessão 1: Local de Atendimento -->
       <div class="flex flex-col md:flex-row items-center gap-10">
         <!-- Imagem da clínica -->
-        <img src="assets/clinica.jpg" alt="Clínica Aliosha" class="w-full md:w-1/2 rounded shadow-lg object-cover" />
+        <img src="assets/clinica.jpg" alt="Clínica Aliosha" class="md:h-96 md:w-1/2 rounded shadow-lg object-cover" />
 
         <!-- Texto -->
         <div class="md:w-1/2 text-left">
