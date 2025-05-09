@@ -1,0 +1,336 @@
+<main class="bg-[#fdf8f5] text-gray-800">
+
+
+  <section class="relative flex flex-col items-center text-center px-4 sm:px-6 pt-0 pb-24 bg-[url('foto2.jpg')] bg-cover bg-center bg-no-repeat min-h-[80vh]">
+    <div class="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
+  
+    <!-- Header com menu responsivo -->
+    <header class="relative z-10 w-full py-6">
+      <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+        <!-- Botão hambúrguer (visível no mobile) -->
+        <button (click)="toggleMenu()" id="menu-button" class="md:hidden text-gray-700 hover:text-[#d4866c] focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+  
+        <!-- Navegação (desktop) -->
+        <nav class="hidden md:flex items-center justify-between w-full text-sm font-semibold tracking-widest text-black/60">
+          <div class="flex gap-x-12">
+            <a href="#" class="hover:text-[#d4866c] uppercase">Página inicial</a>
+            <a href="#" class="hover:text-[#d4866c] uppercase">Quem somos</a>
+            <a href="#" class="hover:text-[#d4866c] uppercase">Serviços</a>
+          </div>
+          <div class="flex justify-center opacity-80">
+            <img src="assets/logo.png" alt="Logo Dra. Sesylia" class="h-20 sm:h-24 md:h-28" />
+          </div>
+          <div class="flex gap-x-12">
+            <a href="#" class="hover:text-[#d4866c] uppercase">Artigos</a>
+            <a href="#" class="hover:text-[#d4866c] uppercase">Fale conosco</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+  
+<div *ngIf="menuAberto || menuMovendo" class="fixed inset-0 bg-black/50 z-20" (click)="toggleMenu()"></div>
+
+<!-- Menu lateral deslizando -->
+<div [ngClass]="{
+    'transform': true,
+    'transition-transform': true,
+    'duration-100': true,
+    'ease-in-out': true,
+    'w-1/2': true,
+    'fixed top-0 left-0 h-full bg-[#d4866c] z-30': true,
+    'translate-x-0': menuAberto,
+    '-translate-x-full': !menuAberto && !menuMovendo,
+    '-translate-x-1/12': menuMovendo
+  }">
+  <div class="flex flex-col items-center py-12 w-full sm:w-64 md:w-64 lg:w-64 px-4">
+    <a href="#" class="text-black/60  uppercase mb-6">Página inicial</a>
+    <a href="#" class="text-black/60  uppercase mb-6">Quem somos</a>
+    <a href="#" class="text-black/60  uppercase mb-6">Serviços</a>
+    <a href="#" class="text-black/60  uppercase mb-6">Artigos</a>
+    <a href="#" class="text-black/60  uppercase mb-6">Fale conosco</a>
+  </div>
+</div>
+
+  
+    <!-- Conteúdo principal -->
+    <div class="relative z-10 max-w-2xl mt-16 sm:mt-24 px-4">
+      <p class="uppercase tracking-widest text-sm text-gray-600 mb-2 font-semibold">
+        Especialidade em Ginecologia e Obstetrícia
+      </p>
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-title font-bold text-[#2d2d2d] mb-6 sm:mb-8">
+        Dra. Sesylia Aliosha
+      </h1>
+      <p class="text-base sm:text-lg md:text-xl text-gray-700 italic leading-relaxed mb-6 sm:mb-8">
+        "Minha missão é oferecer cuidados de excelência e bem-estar para mulheres em todas as fases da vida, abrangendo
+        desde a juventude até a menopausa, com foco na saúde ginecológica e reprodutiva."
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#"
+           class="bg-[#d4866c] text-white px-6 py-3 rounded hover:bg-[#bb6f5a] transition font-semibold text-lg text-center">Entre
+          em contato</a>
+        <a href="#"
+           class="border border-gray-400 px-6 py-3 rounded hover:border-gray-600 transition font-semibold text-lg text-center">Saiba
+          mais</a>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+
+  <section class="relative overflow-hidden bg-white py-16 px-4">
+    <!-- Flores decorativas -->
+    <img src="assets/flower.png" alt=""
+      class="absolute top-0 right-0 w-32 md:w-96 object-contain pointer-events-none translate-x-1/4 -translate-y-1/2 opacity-30" />
+    <img src="assets/flower.png" alt=""
+      class="absolute bottom-0 left-0 w-32 md:w-96 object-contain pointer-events-none rotate-180 -translate-x-1/4 translate-y-1/2 opacity-30" />
+
+    <div class="max-w-6xl mx-auto text-center relative z-10">
+      <div class="flex justify-center mb-4">
+        <img src="assets/icon.png" alt="Ícone Floral" class="w-8 h-8 animate-bounce" />
+      </div>
+
+      <h2 class="text-3xl md:text-4xl font-title font-semibold text-[#2d2d2d] mb-4">Serviços oferecidos</h2>
+      <p class="text-[#5f5f5f] text-base md:text-lg max-w-xl mx-auto mb-12">
+        Ofereço atendimentos nas áreas de <span class="font-semibold">ginecologia</span>,
+        <span class="font-semibold">obstetrícia</span> e sou especialista em
+        <span class="font-semibold">procedimentos cirúrgicos ginecológicos</span>.
+      </p>
+
+      <!-- Serviços -->
+      <div class="flex flex-col md:flex-row justify-center items-center md:items-start gap-12 mt-12">
+        <!-- Ginecologia -->
+        <div class="relative">
+          <div class="absolute -top-4 -left-4 w-6 h-6 md:w-8 md:h-8 bg-[#2b4233] z-0"></div>
+          <div class="relative z-10">
+            <img src="assets/gynecologist.png" alt="Ginecologia"
+              class="w-full max-w-xs object-cover rounded shadow-lg mx-auto hover-effect" />
+            <div class="w-full max-w-xs bg-[#eab4a2] text-center py-2 text-lg font-serif text-[#2d2d2d] mx-auto">
+              Ginecologia
+            </div>
+          </div>
+        </div>
+
+        <!-- Obstetrícia -->
+        <div class="relative">
+          <div class="absolute -bottom-4 -right-4 w-6 h-6 md:w-8 md:h-8 bg-[#2b4233] z-0"></div>
+          <div class="relative z-10">
+            <img src="assets/obtetricia.jpg" alt="Obstetrícia"
+              class="w-full max-w-xs object-cover rounded shadow-lg mx-auto hover-effect" />
+            <div class="w-full max-w-xs bg-[#eab4a2] text-center py-2 text-lg font-serif text-[#2d2d2d] mx-auto">
+              Obstetrícia
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="mt-16 text-center max-w-3xl mx-auto px-4 text-[#92736d] text-base md:text-lg leading-relaxed font-serif">
+        <p class="italic">
+          "Acredito que toda mulher merece um atendimento de qualidade, respeitoso e personalizado. Meu compromisso é
+          estar
+          presente em todas as etapas da vida, oferecendo cuidado atencioso, expertise técnica e dedicação total à sua
+          saúde
+          e bem-estar."
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="relative bg-[#fdf3ee] py-24 px-6 overflow-hidden">
+    <!-- Pattern discreto no fundo -->
+    <div class="absolute inset-0 bg-[url('assets/pattern1.png')] opacity-10 bg-repeat"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+
+      <!-- Imagem da Dra. com sobreposição -->
+      <div class="relative w-full lg:w-1/2">
+        <img src="assets/aiwoman.jpg" alt="Retrato profissional da Dra. Sesylia Aliosha, ginecologista e obstetra"
+          class="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-lg shadow-lg h-auto mx-auto mt-[-4rem]" />
+      </div>
+
+      <!-- Texto -->
+      <div class="w-full lg:w-1/2 text-center lg:text-left">
+        <p class="uppercase tracking-widest text-sm text-gray-600 mb-2 font-semibold">Ginecologia e Obstetrícia</p>
+        <h2 class="text-3xl md:text-4xl font-title font-semibold text-[#2d2d2d] mb-4">Dra. Sesylia Aliosha</h2>
+        <p class="text-[#5f5f5f] text-base md:text-lg leading-relaxed mb-6">
+          Sou médica formada pela Universidade de Campinas (UNICAMP), com especialização em Ginecologia e Obstetrícia,
+          além de ter feito uma formação avançada em Ginecologia Reprodutiva e Endoscopia Ginecológica. Essa experiência
+          me capacita a realizar tratamentos de fertilidade, além de procedimentos de alta complexidade, como
+          histeroscopia e laparoscopia, com o objetivo de melhorar a qualidade de vida das minhas pacientes. Acredito
+          que a saúde de cada mulher é única e, por isso, meu compromisso é oferecer um atendimento totalmente
+          individualizado.
+        </p>
+        <p class="text-[#5f5f5f] text-base md:text-lg leading-relaxed mb-6">
+          Tenho a convicção de que cada mulher possui necessidades e características únicas, o que exige um atendimento
+          totalmente personalizado, considerando seu histórico de saúde, condições e preocupações.
+        </p>
+
+        <!-- Botões -->
+        <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mt-6">
+          <a href="#"
+            class="bg-[#d4866c] text-white px-6 py-2 rounded hover:bg-[#bb6f5a] transition font-semibold text-center">
+            Agende sua consulta
+          </a>
+          <a href="#"
+            class="border border-gray-400 px-6 py-2 rounded hover:border-gray-600 transition font-semibold text-center">
+            Veja minha formação
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Local de Atendimento e Cirurgias Ginecológicas -->
+  <section class="bg-[#ffffff] py-20">
+    <div class="max-w-6xl mx-auto px-6 space-y-24">
+
+      <!-- Sessão 1: Local de Atendimento -->
+      <div class="flex flex-col md:flex-row items-center gap-10">
+        <!-- Imagem da clínica -->
+        <img src="assets/clinica.jpg" alt="Clínica Aliosha" class="w-full md:w-1/2 rounded shadow-lg object-cover" />
+
+        <!-- Texto -->
+        <div class="md:w-1/2 text-left">
+          <h2 class="text-3xl md:text-4xl font-title font-semibold text-[#2d2d2d] mb-4">Local de Atendimento</h2>
+          <p class="text-[#5f5f5f] mb-2"><strong>Clínica Aliosha</strong></p>
+          <p class="text-[#5f5f5f] mb-2">Rua João Evangelista, 777</p>
+          <p class="text-[#5f5f5f] mb-2">Jardim Patmos - Araguaína/TO</p>
+          <p class="text-[#5f5f5f] mb-2">(99) 2222-2222</p>
+          <p class="text-[#5f5f5f] mb-6">(99) 99999-9999</p>
+
+          <a href="#" class="bg-[#d4866c] text-white px-6 py-2 rounded hover:bg-[#bb6f5a] transition font-semibold">
+            Agendar consulta
+          </a>
+        </div>
+      </div>
+
+      <!-- Sessão 2: Cirurgias Ginecológicas -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+        <!-- Imagem de bem-estar -->
+        <img src="assets/ww.png" alt="Bem-estar Feminino" class="w-96 md:w-1/2 rounded object-cover" />
+
+        <!-- Texto -->
+        <div class="md:w-1/2 text-left">
+          <h2 class="text-3xl md:text-4xl font-title font-semibold text-[#2d2d2d] mb-4">Cirurgias Ginecológicas</h2>
+          <p class="text-[#5f5f5f] text-base leading-relaxed">
+            Como médica especializada em cirurgia ginecológica, realizo tratamentos para diversas condições do sistema
+            reprodutivo feminino, incluindo <strong>histeroscopia</strong>, <strong>laparoscopia pélvica</strong>,
+            <strong>cirurgia conservadora de miomas</strong>, <strong>cirurgia para síndrome dos ovários
+              policísticos</strong> e <strong>procedimentos para tratamento de endometriose</strong>.
+            Cada intervenção é realizada com o máximo cuidado e precisão, visando oferecer os melhores resultados
+            possíveis e o bem-estar das minhas pacientes.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Artigos e Publicações -->
+  <section class="bg-white py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex justify-center mb-4">
+        <img src="assets/icon.png" alt="Ícone Floral" class="w-8 h-8 animate-bounce" />
+      </div>
+      <h2 class="text-4xl font-title font-semibold text-[#2d2d2d] text-center mb-12">
+        Artigos e Publicações
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Artigo 1 -->
+        <div class="bg-[#fdf2ee] rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="assets/endometriose.jpg" alt="Endometriose" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-[#2d2d2d] mb-2">Endometriose</h3>
+            <p class="text-[#5f5f5f] text-sm mb-4">
+              A endometriose é uma condição comum que pode causar dores intensas na região pélvica, afetando até 15% das
+              mulheres em idade fértil. Ela ocorre quando o tecido endometrial cresce fora do útero, podendo levar a
+              sintomas debilitantes.
+            </p>
+            <a href="#" class="text-[#d4866c] font-semibold hover:underline">Ler mais</a>
+          </div>
+        </div>
+
+        <!-- Artigo 2 -->
+        <div class="bg-[#fdf2ee] rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="assets/cirurgia.jpg" alt="Videolaparoscopia" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-[#2d2d2d] mb-2">Cirurgia Ginecológica Videolaparoscópica</h3>
+            <p class="text-[#5f5f5f] text-sm mb-4">
+              A videolaparoscopia é uma técnica inovadora que proporciona tratamentos ginecológicos com menos invasão, o
+              que resulta em recuperação mais rápida e cicatrizes mínimas, além de maior precisão nas cirurgias.
+            </p>
+            <a href="#" class="text-[#d4866c] font-semibold hover:underline">Ler mais</a>
+          </div>
+        </div>
+
+        <!-- Artigo 3 -->
+        <div class="bg-[#fdf2ee] rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="assets/saude.jpg" alt="Saúde Feminina" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-[#2d2d2d] mb-2">Prevenção na Saúde Feminina</h3>
+            <p class="text-[#5f5f5f] text-sm mb-4">
+              Consultas ginecológicas regulares são essenciais para a detecção precoce de alterações no sistema
+              reprodutivo feminino, ajudando a garantir o bem-estar da mulher e a prevenção de doenças.
+            </p>
+            <a href="#" class="text-[#d4866c] font-semibold hover:underline">Ler mais</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-[#2d2d2d] text-white py-12 mt-20">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Contato -->
+      <div>
+        <h4 class="text-xl font-semibold mb-4">Entre em contato</h4>
+        <p class="text-sm mb-2">+55 (11) 98765-4321</p>
+        <p class="text-sm">+55 (11) 2222-3333</p>
+      </div>
+
+      <!-- Links Úteis -->
+      <div>
+        <h4 class="text-xl font-semibold mb-4">Links Úteis</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#atendimentos" class="hover:underline">Atendimentos Ginecológicos</a></li>
+          <li><a href="#cirurgias" class="hover:underline">Cirurgias Ginecológicas</a></li>
+          <li><a href="#obstetrico" class="hover:underline">Acompanhamento Obstétrico</a></li>
+        </ul>
+      </div>
+
+      <!-- Créditos -->
+      <div class="md:text-right">
+        <p class="text-sm mb-2">© 2023 Dra. Sesylia Aliosha</p>
+        <p class="text-sm">Todos os Direitos Reservados</p>
+        <p class="text-sm mt-2">
+          Site desenvolvido por <a href="https://leo-web.com" class="text-[#d4866c] hover:underline">LeoWeb</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+</main>

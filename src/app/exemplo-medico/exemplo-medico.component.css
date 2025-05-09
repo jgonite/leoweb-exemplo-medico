@@ -1,0 +1,13 @@
+main {
+    font-family: 'Poppins', sans-serif;
+  }
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+  .hover-effect {
+    transition: transform 0.3s ease-in-out; /* Suaviza o movimento */
+  }
+  .hover-effect:hover {
+    transform: translateY(-10px); /* Move a imagem para cima */
+}
+
