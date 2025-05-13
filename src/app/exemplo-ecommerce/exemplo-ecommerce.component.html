@@ -1,70 +1,362 @@
-<!-- Navbar fixa no topo -->
-<!-- Faixa superior com o título -->
-<div class="w-full bg-orange-300 text-center text-sm text-gray-900 py-1">
+
+<main class="pt-[180px]">
+
+<div class="fixed top-0 left-0 right-0 z-50 bg-white">
+  <div class="w-full bg-[#ffbf00] text-center text-sm text-gray-900 py-1 z-60">
     Maravilhas das profundezas das procuras | Mixirica
   </div>
-  
-  <!-- Logo centralizado -->
-  <div class="w-full bg-white py-4 flex flex-col items-center">
-    <img src="assets/tangerine-svgrepo-com.svg" alt="Mixirica" class="h-12" />
-    <p class="sticky-lemon font-bold text-black-800 mt-1">Mixirica</p>
-  </div>
-  
-  <!-- Navbar -->
-  <header class="w-full bg-white shadow z-40">
-    <div class="flex items-center justify-between px-6 py-4">
-        <nav class="flex-1 flex justify-center space-x-6 text-sm font-medium text-yellow-800">
-            <a href="#" class="relative group transition-colors duration-300 text-yellow-800 hover:text-orange-400">
-              ver tudo
-              <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a href="#" class="relative group transition-colors duration-300 text-yellow-800 hover:text-orange-400">
-              mochilas
-              <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a href="#" class="relative group transition-colors duration-300 text-yellow-800 hover:text-orange-400">
-              roupas
-              <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a href="#" class="relative group transition-colors duration-300 text-yellow-800 hover:text-orange-400">
-                calçados
-                <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a href="#" class="relative group transition-colors duration-300 text-yellow-800 hover:text-orange-400">
-                acessórios
-                <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a href="#" class="relative group transition-colors duration-300 text-yellow-800 hover:text-orange-400">
-                jóias
-                <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a href="#" class="relative group transition-colors duration-300 text-teal-800 hover:text-teal-400">
-                temporada de vendas
-                <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-teal-400 transition-all duration-300 group-hover:w-full"></span>
-              </a>
+<div class="w-full bg-white py-2 flex flex-col items-center">
+  <img src="assets/tangerine-svgrepo-com.svg" alt="Mixirica" class="h-8" />
+  <p class="sticky-lemon font-bold text-black-800 mt-1">Mixirica</p>
+</div>
 
-            <!-- Repita para os demais itens -->
-          </nav>
-          
-      <div class="flex items-center space-x-4 text-yellow-800">
-        <button aria-label="Login"><i class="fa fa-user"></i></button>
-        <button aria-label="Search"><i class="fa fa-search"></i></button>
-        <button aria-label="Cart"><i class="fa fa-shopping-bag"></i></button>
+<!-- Navbar -->
+<header class="w-full bg-white z-40">
+  <div class="flex items-center justify-between px-6 py-2">
+    <nav class="flex-1 flex justify-center space-x-6 text-sm font-medium text-yellow-800">
+      <a href="#" class="relative group transition-colors duration-300 text-yellow-800 hover:text-orange-400">
+        ver tudo
+        <span
+          class="absolute left-0 bottom-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#" class="relative group transition-colors duration-300 text-yellow-800 hover:text-orange-400">
+        mochilas
+        <span
+          class="absolute left-0 bottom-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#" class="relative group transition-colors duration-300 text-yellow-800 hover:text-orange-400">
+        roupas
+        <span
+          class="absolute left-0 bottom-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#" class="relative group transition-colors duration-300 text-yellow-800 hover:text-orange-400">
+        calçados
+        <span
+          class="absolute left-0 bottom-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#" class="relative group transition-colors duration-300 text-yellow-800 hover:text-orange-400">
+        acessórios
+        <span
+          class="absolute left-0 bottom-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#" class="relative group transition-colors duration-300 text-yellow-800 hover:text-orange-400">
+        jóias
+        <span
+          class="absolute left-0 bottom-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#" class="relative group transition-colors duration-300 text-teal-800 hover:text-teal-400">
+        temporada de vendas
+        <span
+          class="absolute left-0 bottom-0 w-0 h-0.5 bg-teal-400 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+      <!-- Repita para os demais itens -->
+    </nav>
+
+    <div class="flex items-center space-x-4 text-yellow-800">
+      <button aria-label="Login"><i class="fa fa-user cursor-pointer"></i></button>
+      <button aria-label="Search"><i class="fa fa-search cursor-pointer"></i></button>
+      <button aria-label="Cart"><i class="fa fa-shopping-bag cursor-pointer"></i></button>
+    </div>
+  </div>
+</header>
+</div>
+
+<!-- Hero section com 3 imagens -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-0">
+  <img src="assets/banner-left.jpg" alt="Banner 1" class="w-full h-11/12 object-cover" />
+  <div class="relative">
+    <img src="assets/banner-center.jpg" alt="Banner 2" class="w-full h-11/12 object-cover filter blur-xs" />
+    <div class="absolute bottom-44 left-1/2 transform -translate-x-1/2 text-center text-white">
+      <p class="mb-2">Nossa nova coleção acabou de sair.</p>
+      <button class="bg-white text-black px-8 py-4 rounded-full font-semibold cursor-pointer">Ver tudo</button>
+    </div>
+  </div>
+  <img src="assets/banner-right.jpg" alt="Banner 3" class="w-full h-11/12 object-cover" />
+</section>
+
+
+<section class="py-16 bg-[#f1f9f6] text-center">
+  <p class="text-sm uppercase tracking-wide text-gray-600">NOVIDADES</p>
+  <h2 class="text-sm font-semibold mb-10">
+    <a href="#" class="text-gray-900 hover:underline">
+      Shopping de variedades | maravilhas das profundezas das procuras
+    </a>
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 px-4 md:px-48">
+
+
+    <!-- Produto 1 -->
+    <div class="w-fit mx-auto">
+      <div class="relative group h-72 overflow-hidden" (mouseenter)="imgSrc1 = 'assets/eg1p.png'"
+        (mouseleave)="imgSrc1 = 'assets/eg1r.png'">
+        <img [src]="imgSrc1" alt="Fanny pack"
+          class="w-auto h-full object-contain border-2 border-dashed border-[#ffbf00] rounded-lg cursor-pointer transition-opacity duration-300" />
+
+        <!-- Faixa preta -->
+        <div
+          class="absolute bottom-0 left-0 w-full h-[30px] bg-black text-white text-sm font-semibold flex items-center justify-center translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+          Comprar peça!
+        </div>
+      </div>
+
+      <!-- Texto descritivo (mantido abaixo da imagem) -->
+      <p class="mt-4 text-sm text-gray-800 font-medium text-center">
+        Fanny pack | colourblocking <br />
+        aquatic green + sandy yellow
+      </p>
+      <p class="text-sm text-gray-600 mt-1 text-center">€24,95</p>
+    </div>
+
+
+
+    <!-- Produto 2 -->
+    <div class="w-fit mx-auto">
+      <div class="relative group h-72 overflow-hidden" (mouseenter)="imgSrc2 = 'assets/eg2p.png'"
+        (mouseleave)="imgSrc2 = 'assets/eg2r.png'">
+        <img [src]="imgSrc2" alt="Fanny pack"
+          class="w-auto h-full object-contain border-2 border-dashed border-[#ffbf00] rounded-lg cursor-pointer transition-opacity duration-300" />
+
+        <!-- Faixa preta -->
+        <div
+          class="absolute bottom-0 left-0 w-full h-[30px] bg-black text-white text-sm font-semibold flex items-center justify-center translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+          Comprar peça!
+        </div>
+      </div>
+
+      <!-- Texto descritivo (mantido abaixo da imagem) -->
+      <p class="mt-4 text-sm text-gray-800 font-medium text-center">
+        Fanny pack | colourblocking <br />
+        aquatic green + sandy yellow
+      </p>
+      <p class="text-sm text-gray-600 mt-1 text-center">€24,95</p>
+    </div>
+
+
+    <!-- Produto 3 -->
+    <div class="w-fit mx-auto">
+      <div class="relative group h-72 overflow-hidden" (mouseenter)="imgSrc3 = 'assets/eg3p.png'"
+        (mouseleave)="imgSrc3 = 'assets/eg3r.png'">
+        <img [src]="imgSrc3" alt="Fanny pack"
+          class="w-auto h-full object-contain border-2 border-dashed border-[#ffbf00] rounded-lg cursor-pointer transition-opacity duration-300" />
+
+        <!-- Faixa preta -->
+        <div
+          class="absolute bottom-0 left-0 w-full h-[30px] bg-black text-white text-sm font-semibold flex items-center justify-center translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+          Comprar peça!
+        </div>
+      </div>
+
+      <!-- Texto descritivo (mantido abaixo da imagem) -->
+      <p class="mt-4 text-sm text-gray-800 font-medium text-center">
+        Fanny pack | colourblocking <br />
+        aquatic green + sandy yellow
+      </p>
+      <p class="text-sm text-gray-600 mt-1 text-center">€24,95</p>
+    </div>
+
+    <!-- Produto 4 -->
+    <div class="w-fit mx-auto">
+      <div class="relative group h-72 overflow-hidden" (mouseenter)="imgSrc4 = 'assets/eg4p.png'"
+        (mouseleave)="imgSrc4 = 'assets/eg4r.png'">
+        <img [src]="imgSrc4" alt="Fanny pack"
+          class="w-auto h-full object-contain border-2 border-dashed border-[#ffbf00] rounded-lg cursor-pointer transition-opacity duration-300" />
+
+        <!-- Faixa preta -->
+        <div
+          class="absolute bottom-0 left-0 w-full h-[30px] bg-black text-white text-sm font-semibold flex items-center justify-center translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+          Comprar peça!
+        </div>
+      </div>
+
+      <!-- Texto descritivo (mantido abaixo da imagem) -->
+      <p class="mt-4 text-sm text-gray-800 font-medium text-center">
+        Fanny pack | colourblocking <br />
+        aquatic green + sandy yellow
+      </p>
+      <p class="text-sm text-gray-600 mt-1 text-center">€24,95</p>
+    </div>
+
+    <!-- Produto 5 -->
+    <div class="w-fit mx-auto">
+      <div class="relative group h-72 overflow-hidden" (mouseenter)="imgSrc5 = 'assets/eg5p.png'"
+        (mouseleave)="imgSrc5 = 'assets/eg5r.png'">
+        <img [src]="imgSrc5" alt="Fanny pack"
+          class="w-auto h-full object-contain border-2 border-dashed border-[#ffbf00] rounded-lg cursor-pointer transition-opacity duration-300" />
+
+        <!-- Faixa preta -->
+        <div
+          class="absolute bottom-0 left-0 w-full h-[30px] bg-black text-white text-sm font-semibold flex items-center justify-center translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+          Comprar peça!
+        </div>
+      </div>
+
+      <!-- Texto descritivo (mantido abaixo da imagem) -->
+      <p class="mt-4 text-sm text-gray-800 font-medium text-center">
+        Fanny pack | colourblocking <br />
+        aquatic green + sandy yellow
+      </p>
+      <p class="text-sm text-gray-600 mt-1 text-center">€24,95</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="py-16 px-4 md:px-64 bg-white">
+  <div class="w-10/12 mx-auto">
+    <img src="assets/bigkid.png" alt="Moda infantil" class="w-full h-auto object-cover rounded-md shadow-md" />
+  </div>
+</section>
+
+<section class="py-4 px-4 md:px-48 bg-white">
+  <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+    <!-- Imagem -->
+    <div class="w-full md:w-1/2 flex justify-center">
+      <img src="assets/ballerina.jpeg" alt="Imagem da campanha" class="w-8/12 h-auto object-cover rounded-md" />
+    </div>
+
+    <!-- Texto centralizado -->
+    <div class="w-full md:w-1/2 flex flex-col items-center justify-center text-center">
+      <p class="text-base text-slate-700 mb-4">
+        Our first clothing collection, bringing a mix of soft basics and catchy pieces,<br />
+        complementing each other.
+      </p>
+      <p class="text-base text-slate-700 mb-6">
+        Go for a laid-back look with a loose fit sweater or make a statement in our funky striped joggers
+      </p>
+      <button
+        class="bg-rose-400 hover:bg-rose-500 text-white font-semibold py-2 px-6 rounded-full transition-all cursor-pointer">
+        shop clothing
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section class="grid grid-cols-1 md:grid-cols-3 h-[90vh] mt-24 space-x-4">
+  <!-- ITEM -->
+  <div class="relative group overflow-hidden h-full">
+    <!-- Imagem de fundo -->
+    <img
+      src="assets/teen1.jpeg"
+      alt="Bags"
+      class="absolute inset-0 w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700 ease-in-out"
+    />
+
+    <!-- Overlay colorida -->
+    <div class="absolute inset-0 bg-[#FFD4C2] opacity-100 group-hover:opacity-0 transition-opacity duration-700 ease-in-out"></div>
+
+    <!-- Conteúdo -->
+    <div class="relative z-10 flex flex-col items-center justify-center text-center h-full p-8">
+      <h2 class="text-white text-xl md:text-2xl font-medium tracking-wide mb-4">BAGS</h2>
+      <button class="border border-white text-white px-4 py-2 text-sm hover:bg-white hover:text-[#FFD4C2] transition cursor-pointer">
+        SHOP NOW
+      </button>
+    </div>
+  </div>
+
+  <!-- CLOTHING -->
+  <div class="relative group overflow-hidden h-full">
+    <img
+      src="assets/teen2.jpg"
+      alt="Clothing"
+      class="absolute inset-0 w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700 ease-in-out"
+    />
+    <div class="absolute inset-0 bg-[#9AD2E2] opacity-100 group-hover:opacity-0 transition-opacity duration-700 ease-in-out"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center text-center h-full p-8">
+      <h2 class="text-white text-xl md:text-2xl font-medium tracking-wide mb-4">CLOTHING</h2>
+      <button class="border border-white text-white px-4 py-2 text-sm hover:bg-white hover:text-[#9AD2E2] transition cursor-pointer">
+        SHOP NOW
+      </button>
+    </div>
+  </div>
+
+  <!-- ACCESSORIES -->
+  <div class="relative group overflow-hidden h-full">
+    <img
+    src="assets/teen3.jpg"
+      alt="Accessories"
+      class="absolute inset-0 w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700 ease-in-out"
+    />
+    <div class="absolute inset-0 bg-[#E3F576] opacity-100 group-hover:opacity-0 transition-opacity duration-700 ease-in-out"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center text-center h-full p-8">
+      <h2 class="text-white text-xl md:text-2xl font-medium tracking-wide mb-4">ACCESSORIES</h2>
+      <button class="border border-white text-white px-4 py-2 text-sm hover:bg-white hover:text-[#E3F576] transition cursor-pointer">
+        SHOP NOW
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<footer class="bg-[#8A6B35] text-white px-6 py-12 text-sm mt-36">
+  <div class="max-w-7xl mx-auto">
+    <!-- Parte superior: colunas -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      
+      <!-- SERVICES -->
+      <div>
+        <h3 class="uppercase font-bold mb-4">Services</h3>
+        <ul class="space-y-2 text-gray-200">
+          <li><a href="#" class="hover:underline">serviços ao consumidor</a></li>
+          <li><a href="#" class="hover:underline">pagamento</a></li>
+          <li><a href="#" class="hover:underline">envio</a></li>
+          <li><a href="#" class="hover:underline">devoluções</a></li>
+          <li><a href="#" class="hover:underline">Política de Privacidade</a></li>
+        </ul>
+      </div>
+
+      <!-- STICKY LEMON -->
+      <div>
+        <h3 class="uppercase font-bold mb-4">Mixirica</h3>
+        <ul class="space-y-2 text-gray-200">
+          <li><a href="#" class="hover:underline">sobre nós</a></li>
+          <li><a href="#" class="hover:underline">vendas para atacado</a></li>
+          <li><a href="#" class="hover:underline">contato</a></li>
+          <li><a href="#" class="hover:underline">termos de contrato</a></li>
+          <li><a href="#" class="hover:underline">amostras</a></li>
+        </ul>
+      </div>
+
+      <!-- NEWSLETTER -->
+      <div>
+        <h3 class="uppercase font-bold mb-4">Newsletter</h3>
+        <form class="flex flex-col gap-3">
+          <div class="flex border border-white w-full">
+            <input
+              type="email"
+              placeholder="Email"
+              class="bg-transparent px-3 py-2 w-full focus:outline-none text-white placeholder-white"
+            />
+            <button type="submit" class="px-4">
+              →
+            </button>
+          </div>
+          <label class="flex items-start gap-2 text-xs text-white">
+            <input type="checkbox" class="mt-1 accent-white" />
+            <span>Concordo em receber e-mail com ofertas especiais</span>
+          </label>
+        </form>
       </div>
     </div>
-  </header>
-  
-  <!-- Hero section com 3 imagens -->
-  <section class="grid grid-cols-1 md:grid-cols-3 gap-0">
-    <img src="assets/banner-left.jpg" alt="Banner 1" class="w-full h-11/12 object-cover" />
-    <div class="relative">
-      <img src="assets/banner-center.jpg" alt="Banner 2" class="w-full h-11/12 object-cover filter blur-xs" />
-      <div class="absolute bottom-44 left-1/2 transform -translate-x-1/2 text-center text-white">
-        <p class="mb-2">Nossa nova coleção acabou de sair.</p>
-        <button class="bg-white text-black px-8 py-4 rounded-full font-semibold">Ver tudo</button>
+
+    <!-- Parte inferior: pagamentos e copyright -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+      <p class="text-gray-300 text-xs">© 2025 Mixirica, All rights reserved.</p>
+      
+      <div class="flex flex-wrap gap-4 text-white text-2xl">
+        <i class="pf pf-amex" title="American Express"></i>
+        <i class="pf pf-apple-pay" title="Apple Pay"></i>
+        <i class="pf pf-google-pay" title="Google Pay"></i>
+        <i class="pf pf-klarna" title="Klarna"></i>
+        <i class="pf pf-mastercard" title="Mastercard"></i>
+        <i class="pf pf-paypal" title="PayPal"></i>
+        <i class="pf pf-visa" title="Visa"></i>
       </div>
+      
     </div>
-    <img src="assets/banner-right.jpg" alt="Banner 3" class="w-full h-11/12 object-cover" />
-  </section>
-  
-  
+  </div>
+</footer>
+
+</main>
