@@ -1,0 +1,13 @@
+:root {
+    --x-offset: 0px;
+  }
+  
+  @media (min-width: 1024px) {
+    .full-width-submenu {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100vw;
+      transform: translateX(calc(-1 * var(--x-offset)));
+    }
+  }
